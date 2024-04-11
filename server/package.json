@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch src --watch config src/server.js",
+    "r-dev": "next dev",
+    "r-build": "next build",
+    "r-start": "next start",
+    "r-lint": "next lint"
+  },
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "colors": "^1.4.0",
+    "commander": "^12.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0",
+    "mysql": "^2.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "readline": "^1.3.0",
+    "websocket": "^1.0.34",
+    "ws": "^8.16.0",
+    "yargs": "^17.7.2"
+  }
+}

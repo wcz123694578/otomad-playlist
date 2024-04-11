@@ -1,0 +1,53 @@
+#add-video-page {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+
+#add-window {
+    display: none;
+    background-color: white;
+    border: 2px solid gray;
+    height: 30vh;
+    width: 60vw;
+    justify-content: center;
+    margin: auto;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.close-button   {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    background-color: red;
+    border: black solid 1px;
+    color: white;
+    height: 5vh;
+    width: 5vh;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+}
+
+.close-button span  {
+    font-weight: bold;
+    position: absolute;
+    margin: auto;
+}
+
+.warn-block span {
+    font-size: 2vh;
+}
+
+#path-warn-block    {
+    display: none;
+}

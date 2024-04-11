@@ -1,0 +1,11 @@
+#App {
+    color: #000;
+}
+
+.warn-block {
+    background-color: rgb(252, 152, 152);
+    border-bottom: solid red 0.5vh;
+    border-radius: 0.5vh;
+    padding: 2vh;
+    display: flex;
+}
