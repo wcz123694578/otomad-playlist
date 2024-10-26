@@ -4,6 +4,7 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '123456',
+    port: '3306',
     database: 'otomad_list'
 })
 
@@ -59,6 +60,28 @@ exports.addVideo = (videoInfo, callback) => {
     connection.query(sql, videoInfo, (err, res) => {
         if (err)    {
             callback && callback(err, null);
+            return;
+        }
+        callback && callback(null, res);
+    })
+}
+
+exports.DelVideo = (vid, callback) => {
+    const sql = `DELETE FROM videos WHERE vid=${vid}`;
+    connection.query(sql, (err, res) => {
+        if (err) {
+            callback & callback(err, null);
+            return;
+        }
+        callback && callback(null, res);
+    })
+}
+
+exports.DelList = (pid, callback) => {
+    const sql = `DELETE FROM media_lists WHERE pid=${pid}`;
+    connection.query(sql, (err, res) => {
+        if (err) {
+            callback & callback(err, null);
             return;
         }
         callback && callback(null, res);
